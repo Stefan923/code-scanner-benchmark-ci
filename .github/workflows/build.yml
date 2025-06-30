@@ -35,4 +35,4 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Stefan923_code-scanner-benchmark-ci_c82ae9fb-2316-451f-80aa-440c1cb899e0 -Dsonar.projectName='code-scanner-benchmark-ci' -Dsonar.verbose=true
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Stefan923_code-scanner-benchmark-ci_c82ae9fb-2316-451f-80aa-440c1cb899e0 -Dsonar.projectName='code-scanner-benchmark-ci' -Dsonar.verbose=true -Dsonar.log.level=DEBUG

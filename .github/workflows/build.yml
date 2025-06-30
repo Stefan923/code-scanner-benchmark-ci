@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: Build and analyze
+    name: Build and analyze using SonarQube
     runs-on: [self-hosted]
     
     steps:
